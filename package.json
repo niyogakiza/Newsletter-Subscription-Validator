@@ -1,0 +1,12 @@
+{
+  "name": "newsletter-subscription-validator",
+  "version": "1.0.0",
+  "description": "A module to validate the subscription to the newsletter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
