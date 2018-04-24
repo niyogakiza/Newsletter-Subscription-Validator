@@ -6,7 +6,11 @@
   "scripts": {
     "test": "mocha"
   },
-  "keywords": [],
+  "keywords": [
+    "Validation",
+    "Newsletter",
+    "Subscription"
+  ],
   "author": "Zine Eddine Labdaoui <zlabdaoui@gmail.com>",
   "license": "ISC",
   "devDependencies": {
