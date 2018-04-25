@@ -20,3 +20,9 @@ nsv({
     // Failure case
 })
 ```
+
+# Test 
+
+```
+npm test
+```

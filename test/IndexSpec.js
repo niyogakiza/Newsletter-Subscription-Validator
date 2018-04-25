@@ -19,10 +19,20 @@ describe("Index", function() {
     });
 
     it("should succeed if optional fields are not provided", function() {
-        let valid_input_without_optionals = Object.assign({}, valid_input);
-        delete valid_input_without_optionals.birthday;
-        delete valid_input_without_optionals.zip_code;
+        let valid_input_without_optionals = {
+            first_name: valid_input.first_name,
+            last_name: valid_input.last_name,
+            email: valid_input.email,
+        };
         return nsv(valid_input_without_optionals).should.eventually.deep.equal(valid_input_without_optionals);
+    });
+
+    it("should filters works and the validation succeed", function () {
+        let valid_input_with_not_filtred_data = Object.assign({}, valid_input, {
+            first_name: "Jhon  ",
+            email: "JHON.DON@MAIL.COM "
+        })
+        return nsv(valid_input_with_not_filtred_data).should.eventually.deep.equal(valid_input);
     });
 
     it("should skip unknown provided properties in case of success", function() {
