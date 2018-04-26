@@ -4,9 +4,21 @@
   "description": "A module to validate the subscription to the newsletter",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "keywords": [
+    "Validation",
+    "Newsletter",
+    "Subscription"
+  ],
+  "author": "Zine Eddine Labdaoui <zlabdaoui@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^5.1.1"
+  },
+  "dependencies": {
+    "joi": "^13.2.0"
+  }
 }
